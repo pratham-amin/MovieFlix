@@ -1,0 +1,45 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.title h3:hover {
+  color: #e50914;
+  
+}
+
+
+.contact-header p {
+  color: #ccc;
+}
+
+
+.contact-box,
+.contact-info {
+  background-color: #111;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+
+.form-label {
+  font-weight: 600;
+}
+
+.btn-pink {
+  background-color: #ff4da6;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  background-color: #ff1f8a;
+}
+
+
+.footer {
+  background-color: #000;
+  color: #777;
+  font-size: 0.9rem;
+}

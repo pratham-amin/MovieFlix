@@ -1,0 +1,58 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.title h3:hover {
+  color: #e50914;
+  
+}
+
+.search-section {
+  background-color: #111;
+}
+
+.search-box {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.genre-select {
+  padding: 10px;
+}
+
+.btn-pink {
+  background-color: #ff4da6;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  background-color: #ff1f8a;
+}
+
+.thumb-box {
+  background-color: #222;
+  height: 150px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.thumb-box {
+  width: 100%;
+  height: 250px;        /* fixed height for uniformity */
+  overflow: hidden;     /* hides overflow so images stay inside */
+  border-radius: 6px;
+}
+
+.thumb-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* THIS makes the image fit perfectly */
+  border-radius: 6px;
+}

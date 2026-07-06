@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard – MovieFlix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">MOVIEFLIX</a>
+      <ul class="navbar-nav ms-auto" id="navLinks"></ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2 class="mb-4">User Dashboard</h2>
+
+    <div id="userInfo" class="p-4 bg-secondary rounded"></div>
+  </div>
+
+  <script>
+    // Redirect if not logged in
+    const user = JSON.parse(localStorage.getItem("movieflixUser"));
+    if (!user) {
+      window.location.href = "account.html";
+    }
+
+    // Show user info
+    document.getElementById("userInfo").innerHTML = `
+      <h3>Welcome, ${user.name}</h3>
+      <p><strong>Email:</strong> ${user.email}</p>
+      <p><strong>Member Since:</strong> ${user.created_at}</p>
+    `;
+
+    // Navbar logout button
+    document.getElementById("navLinks").innerHTML = `
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="logoutBtn">Logout</a>
+      </li>
+    `;
+
+    document.getElementById("logoutBtn").onclick = () => {
+      localStorage.removeItem("movieflixUser");
+      window.location.href = "account.html";
+    };
+  </script>
+
+</body>
+
+</html>

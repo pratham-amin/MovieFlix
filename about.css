@@ -1,0 +1,52 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.title h3:hover {
+  color: #e50914;
+  
+}
+
+
+.about-text {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 800px;
+}
+
+
+.faq-box {
+  background-color: #111;
+  padding: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.faq-box h5 {
+  margin-bottom: 0.5rem;
+}
+
+.accordion-button {
+  background-color: #111;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #222;
+  color: #fff;
+}
+
+.accordion-body {
+  background-color: #181818;
+  color: #ddd;
+}
+
+
+
+.footer {
+  background-color: #000;
+  color: #777;
+  font-size: 0.9rem;
+}

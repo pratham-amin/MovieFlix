@@ -1,0 +1,41 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.title h3:hover {
+  color: #e50914;
+  
+}
+
+.login-section {
+  min-height: 90vh;
+}
+
+.login-box {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #333;
+}
+
+.btn-pink {
+  background-color: #ff4da6;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  background-color: #ff1f8a;
+}
+
+.text-pink {
+  color: #ff4da6;
+}
+
+.text-pink:hover {
+  color: #ff1f8a;
+}
